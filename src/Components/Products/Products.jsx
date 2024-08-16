@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 
 const Products = () => {
-  const [products, setProducts] = useState([]);
+   const [products, setProducts] = useState([]);
    const totalCount = useLoaderData();
    console.log(totalCount);
    
