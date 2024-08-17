@@ -54,28 +54,28 @@ const AuthProvider = ({ children }) => {
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, currentUser => {
 
-      const userEmail= currentUser?.email || user?.email;
-      const loggedUser={email:userEmail};
+      // const userEmail= currentUser?.email || user?.email;
+      // const loggedUser={email:userEmail};
 
       setUser(currentUser)
       // console.log('CurrentUser-->', currentUser)
       setLoading(false);
       // if user exists than isuue a token
-      if(currentUser){
-        axios.post('https://alternative-project.vercel.app/jwt',loggedUser, { withCredential:true})
-        .then(res =>{
-          // console.log('token response',res.data);
-          // document.cookie='token'+'='+res.data.token
-        })
-      }
-      else{
-        axios.post('https://alternative-project.vercel.app/logout',loggedUser,{
-          withCredentials:true
-        })
-        .then(res=>{
-          console.log(res.data);
-        })
-      }
+      // if(currentUser){
+      //   axios.post('https://alternative-project.vercel.app/jwt',loggedUser, { withCredential:true})
+      //   .then(res =>{
+      //     // console.log('token response',res.data);
+      //     // document.cookie='token'+'='+res.data.token
+      //   })
+      // }
+      // else{
+      //   axios.post('https://alternative-project.vercel.app/logout',loggedUser,{
+      //     withCredentials:true
+      //   })
+      //   .then(res=>{
+      //     console.log(res.data);
+      //   })
+      // }
 
 
 

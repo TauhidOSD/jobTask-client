@@ -21,9 +21,9 @@ const Navber = () => {
         <div></div>
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1">
-            <li className="font-bold">
+            {/* <li className="font-bold">
               <Link to="/">Home</Link>
-            </li>
+            </li> */}
             <li className="font-bold">
               <Link to="/products">Products</Link>
             </li>
@@ -82,9 +82,9 @@ const Navber = () => {
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1">
-            <liv className="font-bold">
+            {/* <liv className="font-bold">
               <Link to="/">Home</Link>
-            </liv>
+            </liv> */}
             <li className="font-bold">
               <Link to="/products">Products</Link>
             </li>
