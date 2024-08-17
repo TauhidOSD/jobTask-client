@@ -1,3 +1,25 @@
-.pagination .selected {
-    background-color: orange;
-}
+/* Tailwind CSS for filters */
+.filters {
+    @apply p-4 bg-gray-100 rounded-lg;
+  }
+  
+  .filter-group {
+    @apply mb-4;
+  }
+  
+  .input {
+    @apply p-2 border border-gray-300 rounded-lg w-full;
+  }
+  
+  .card {
+    @apply bg-white shadow-lg rounded-lg overflow-hidden;
+  }
+  
+  .pagination {
+    @apply mt-6 text-center;
+  }
+  
+  .pagination button {
+    @apply px-4 py-2 border rounded-lg;
+  }
+  
