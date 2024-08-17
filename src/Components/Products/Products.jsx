@@ -15,7 +15,7 @@ const Products = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/products?page=${currentPage}&size=${itemsPerPage}&search=${encodeURIComponent(searchQuery)}&brand=${encodeURIComponent(brand)}&category=${encodeURIComponent(category)}&minPrice=${minPrice}&maxPrice=${maxPrice}`);
+        const res = await fetch(`https://job-task-server-chi.vercel.app/products?page=${currentPage}&size=${itemsPerPage}&search=${encodeURIComponent(searchQuery)}&brand=${encodeURIComponent(brand)}&category=${encodeURIComponent(category)}&minPrice=${minPrice}&maxPrice=${maxPrice}`);
         const data = await res.json();
         setProducts(data.results);
         setCount(data.count);
@@ -76,8 +76,8 @@ const Products = () => {
 
   return (
     <>
-      <div className="filters p-4">
-        <div className="filter-group">
+      <div className="filters p-4 mb-4">
+        <div className="filter-group ">
           <label className="block">Search</label>
           <input
             type="text"
