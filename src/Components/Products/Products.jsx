@@ -67,13 +67,13 @@ const Products = () => {
       ))}
         
       <div className="pagination text-rose-500 text-center mb-40">
-        {/* <p className="font-semibold">Current page: {currentPage + 1}</p> */}
+        <p className="font-semibold">Current page: {currentPage + 1}</p>
         <button className="font-bold mr-4"
           onClick={handlePrevPage}
           disabled={currentPage === 0}
         >
-          {/* Prev */} 
-          Select Page : 
+          Prev 
+          
         </button>
         {pages.map((page) => (
           <button
@@ -88,7 +88,7 @@ const Products = () => {
           onClick={handleNextPage}
           disabled={currentPage === pages.length - 1}
         >
-          {/* Next */}
+          Next
         </button>
         <select
           className="bg-green-500"
