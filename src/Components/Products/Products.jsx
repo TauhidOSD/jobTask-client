@@ -67,7 +67,7 @@ const Products = () => {
       ))}
         
       <div className="pagination text-rose-500 text-center mb-40">
-        <p className="font-semibold">Current page: {currentPage + 1}</p>
+        <p className="font-semibold">Current page : {currentPage + 1}</p>
         <button className="font-bold mr-4"
           onClick={handlePrevPage}
           disabled={currentPage === 0}
