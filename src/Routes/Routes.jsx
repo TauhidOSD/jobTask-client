@@ -4,6 +4,7 @@ import Home from "../Components/Home/Home";
 import Login from "../Components/Pages/Login/Login";
 import Registation from "../Components/Pages/Registation/Registation";
 import Products from "../Components/Products/Products";
+import Footer from "../Components/Footer/Footer";
  
 const router = createBrowserRouter([
     {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
           element: <Products></Products>,
           loader: () => fetch('https://job-task-server-chi.vercel.app')
           
+        },
+        {
+          path:'/footer',
+          element: <Footer/>
         }
         
       ]

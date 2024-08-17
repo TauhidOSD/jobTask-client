@@ -27,6 +27,9 @@ const Navber = () => {
             <li className="font-bold">
               <Link to="/products">Products</Link>
             </li>
+            <li className="font-bold">
+              <Link to="/footer">Contact</Link>
+            </li>
             {!user && (
               <li className="font-bold rounded-md bg-green-300">
                 <Link to="/login">Login</Link>
@@ -87,6 +90,9 @@ const Navber = () => {
             </liv> */}
             <li className="font-bold">
               <Link to="/products">Products</Link>
+            </li>
+            <li className="font-bold">
+              <Link to="/footer">Contact</Link>
             </li>
             {!user && (
               <li className="font-bold">
